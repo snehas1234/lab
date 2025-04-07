@@ -65,80 +65,80 @@ with open(csv_path, 'r') as file:
     csv_text = ' '.join(row[0] for row in reader if len(row) > 0 and row[0].strip() != '')
 
 
-print("\n========== Analysis for CSV File ==========")
+print("\n Analysis for CSV File\n")
 words, bigrams, trigrams = get_common_elements(csv_text)
 palindromes = find_palindromes(csv_text)
 anagrams = find_anagrams(csv_text)
 rhymes = find_rhymes(csv_text)
 
-print("\n--- Most Common Words ---")
+print("\n Most Common Words \n")
 print(words)
 
-print("\n--- Most Common Bigrams ---")
+print("\nMost Common Bigrams\n")
 print(bigrams)
 
-print("\n--- Most Common Trigrams ---")
+print("\nMost Common Trigrams\n")
 print(trigrams)
 
-print("\n--- Palindrome Words ---")
+print("\nPalindrome Words\n")
 print(palindromes)
 
-print("\n--- Anagram Pairs ---")
+print("\nAnagram Pairs\n")
 print(anagrams)
 
-print("\n--- Rhyming Words ---")
+print("\nRhyming Words\n")
 print(rhymes)
 
 austen_text = gutenberg.raw('austen-emma.txt')[:5000]
 shakespeare_text = gutenberg.raw('shakespeare-hamlet.txt')[:5000]
 
-print("\n========== Analysis for Austen's Emma ==========")
+print("\n Analysis for Austen's Emma")
 words, bigrams, trigrams = get_common_elements(austen_text)
 palindromes = find_palindromes(austen_text)
 anagrams = find_anagrams(austen_text)
 rhymes = find_rhymes(austen_text)
 
-print("\n--- Most Common Words ---")
+print("\nMost Common Words\n")
 print(words)
 
-print("\n--- Most Common Bigrams ---")
+print("\nMost Common Bigrams\n")
 print(bigrams)
 
-print("\n--- Most Common Trigrams ---")
+print("\nMost Common Trigrams \n")
 print(trigrams)
 
-print("\n--- Palindrome Words ---")
+print("\nPalindrome Words\n")
 print(palindromes)
 
-print("\n--- Anagram Pairs ---")
+print("\nAnagram Pairs\n")
 print(anagrams)
 
-print("\n--- Rhyming Words ---")
+print("\n Rhyming Words\n")
 print(rhymes)
 
 
 
-print("\n========== Analysis for Shakespeare's Hamlet ==========")
+print("\nAnalysis for Shakespeare's Hamlet\n ")
 words, bigrams, trigrams = get_common_elements(shakespeare_text)
 palindromes = find_palindromes(shakespeare_text)
 anagrams = find_anagrams(shakespeare_text)
 rhymes = find_rhymes(shakespeare_text)
 
-print("\n--- Most Common Words ---")
+print("\n Most Common Words \n")
 print(words)
 
-print("\n--- Most Common Bigrams ---")
+print("\nMost Common Bigrams \n")
 print(bigrams)
 
-print("\n--- Most Common Trigrams ---")
+print("\n Most Common Trigrams\n")
 print(trigrams)
 
-print("\n--- Palindrome Words ---")
+print("\nPalindrome Words \n")
 print(palindromes)
 
-print("\n--- Anagram Pairs ---")
+print("\n Anagram Pairs \n")
 print(anagrams)
 
-print("\n--- Rhyming Words ---")
+print("\nRhyming Words \n")
 print(rhymes)
 
